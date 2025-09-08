@@ -1,0 +1,74 @@
+/* ====================================================== GENERAL ====================================================== */
+
+main {
+  display: flex;
+  background-color: burlywood;
+  margin-left: 7rem;
+  margin-right: 2.5rem;
+  height: 80vh;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ====================================================== SIDEBAR ====================================================== */
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* ====================================================== HEADER ====================================================== */
+
+header {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.search-input {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  border: solid 2px rgb(248, 219, 182);
+  border-radius: 10px;
+
+}
+
+.search-bar:focus {
+  border: solid 2px rgb(248, 219, 182);
+  outline: none;
+}
+
+.search-btn {
+  flex: 0 0 auto; /* mantiene tamaño fijo */
+  border: solid 2px rgb(248, 219, 182);
+  border-radius: 10px;
+  background: bisque;
+  padding: 10px 14px;
+}
+
+.search-btn:hover {
+  border: solid 2px bisque;
+  background: rgb(248, 219, 182);
+}
+
+/* ====================================================== FOOTER ====================================================== */
+
+.sticky {
+  position: sticky;
+  bottom: 0;
+}
