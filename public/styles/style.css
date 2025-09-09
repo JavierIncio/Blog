@@ -1,23 +1,166 @@
 /* ====================================================== GENERAL ====================================================== */
 
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  color: saddlebrown;
+}
+
+h1, h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
 main {
   display: flex;
-  background-color: burlywood;
+  justify-content: center;
   margin-left: 7rem;
   margin-right: 2.5rem;
   height: 80vh;
+  width: 80%;
+  gap: 5rem;
+}
+
+main > section {
+  display: flex;
+  border: solid 3px burlywood;
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+.image,
+.ingredientes,
+.cuerpo {
+  border-radius: 50px;
+  border: solid 3px burlywood;
+  width: 300px;
 }
 
 .cabecera {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  height: fit-content;
+  gap: 1.5rem;
 }
+
+.image {
+  height: 22vh;
+  overflow: hidden;
+}
+
+.image > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ingredientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.ingredientes > div {
+  height: 46.5vh;;
+  max-height: 46.5vh;
+  overflow-y: auto;
+}
+
+.ingredientes  ul {
+  list-style: none;
+  padding-left: 0;  
+} 
+
+.ingredientes li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+} 
+
+.ingredientes label {
+  width: 90%;
+  word-wrap: break-word;
+} 
 
 .cuerpo {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  padding: 1rem;
+  height: 100%;
+  
 }
 
+.text {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.text p {
+  width: 90%;
+  word-wrap: break-word;
+}
+
+
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 1rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 400px;
+}
+
+.recipe-list div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px burlywood;
+  border-radius: 50px;
+  min-height: 50px;
+}
+
+.recipe-list div:hover {
+  background-color: burlywood;
+  border-color: saddlebrown;
+}
+
+a {
+  text-decoration: none;
+  color: saddlebrown;
+  font-weight: 600;
+}
+
+/* ====================================================== SCROLLBARS ====================================================== */
+
+.recipe-list::-webkit-scrollbar,
+.ingredientes > div::-webkit-scrollbar,
+.text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.recipe-list::-webkit-scrollbar-track,
+.ingredientes > div::-webkit-scrollbar-track,
+.text::-webkit-scrollbar-track {
+  border: solid 3px burlywood;
+  border-radius: 10px;
+}
+
+.recipe-list::-webkit-scrollbar-thumb,
+.ingredientes > div::-webkit-scrollbar-thumb,
+.text::-webkit-scrollbar-thumb {
+  background-color: saddlebrown;
+  border-radius: 10px;
+}
 
 /* ====================================================== SIDEBAR ====================================================== */
 
@@ -43,19 +186,19 @@ header {
 .search-bar {
   flex: 1;
   padding: 10px;
-  border: solid 2px rgb(248, 219, 182);
+  border: solid 2px burlywood;
   border-radius: 10px;
 
 }
 
 .search-bar:focus {
-  border: solid 2px rgb(248, 219, 182);
+  border: solid 2px burlywood;
   outline: none;
 }
 
 .search-btn {
   flex: 0 0 auto; /* mantiene tamaño fijo */
-  border: solid 2px rgb(248, 219, 182);
+  border: solid 2px burlywood;
   border-radius: 10px;
   background: bisque;
   padding: 10px 14px;
@@ -63,7 +206,7 @@ header {
 
 .search-btn:hover {
   border: solid 2px bisque;
-  background: rgb(248, 219, 182);
+  background: burlywood;
 }
 
 /* ====================================================== FOOTER ====================================================== */

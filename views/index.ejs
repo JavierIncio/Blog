@@ -1,53 +1,104 @@
 <%- include("partials/header") %> <%- include("partials/sidebar.ejs") %>
 
-<main>
-  <div class="cabecera">
-    <img src="/images/receta.jpg" alt="" width="400px" />
-    <h2>Ingredientes</h2>
-    <ul>
-      <li>
-        <input type="checkbox" id="ingrediente-0" />
-        <label for="ingrediente-0"> 300 mililitros de leche evaporada </label>
-      </li>
-      <li>
-        <input type="checkbox" id="ingrediente-1" />
-        <label for="ingrediente-1"> 100 mililitros de leche condensada </label>
-      </li>
-      <li>
-        <input type="checkbox" id="ingrediente-2" />
-        <label for="ingrediente-2"> 3 huevos </label>
-      </li>
-      <li>
-        <input type="checkbox" id="ingrediente-3" />
-        <label for="ingrediente-3"> 75 gramos de azúcar </label>
-      </li>
-      <li>
-        <input type="checkbox" id="ingrediente-4" />
-        <label for="ingrediente-4"> esencia de vainilla </label>
-      </li>
-    </ul>
-    <h3>Para el caramelo:</h3>
-    <ul>
-      <li>
-        <input type="checkbox" id="ingrediente-6" />
-        <label for="ingrediente-6"> 200 mililitros de agua </label>
-      </li>
-      <li>
-        <input type="checkbox" id="ingrediente-7" />
-        <label for="ingrediente-7"> 100 gramos de azúcar (½ taza) </label>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="cuerpo">
-    <h1>Title</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati
-      officiis excepturi dolores omnis animi velit deserunt explicabo adipisci
-      vitae maiores, debitis ex nisi molestias! Voluptatum accusamus tempora
-      numquam veritatis!
-    </p>
-  </div>
-</main>
+    <main>
 
-<%- include("partials/footer") %>
+      <section style="width: 800px;">
+        <div class="cabecera">
+          <div class="image">
+            <img src="/images/espinacas-con-pasas-y-pinones.jpg" alt="receta" class="mb-4" />
+          </div>
+          <div class="ingredientes">
+            <div>
+              <ul>
+                <h2>Ingredientes</h2>
+                <li>
+                  <input type="checkbox" id="ingrediente-0" />
+                  <label for="ingrediente-0"> 1 bolsa de espinacas </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-1" />
+                  <label for="ingrediente-1"> 1 diente de ajo </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-2" />
+                  <label for="ingrediente-2"> 1 puñado de piñones </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-3" />
+                  <label for="ingrediente-3"> 1 puñado de pasas </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-4" />
+                  <label for="ingrediente-4"> Sal </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cuerpo">
+          <h1>Espinacas con pasas y piñones</h1>
+          <div class="text">
+            <ol>
+              <li>
+                <p>
+                  Comenzamos rehogando las espinacas en una sartén con un chorrito de aceite. Poco a poco las vamos a ir añadiendo y ellas mismas van a ir perdiendo toda el agua y veréis que reducen el tamaño a una décima parte de la bolsa.
+                </p>
+                <p>
+                  Las vamos cocinando poco a poco hasta que tengamos cocida toda la bolsa por completo, y las retiramos y las reservamos.
+                </p>
+              </li>
+              <li>
+                <p>
+                  En esa misma sartén doramos el diente de ajo y un puñadito de pasas.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reincorporamos a la sartén las espinacas cocinadas, le ponemos un puñado de piñones tostados por encima y rehogamos un par de minutos, rectificamos de sal y servimos.
+                </p>
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </section>
+      <section>
+        <div class="recipe-list">
+          <a href="#">
+            <div>Receta 001</div>
+          </a>
+          <a href="#">
+            <div>Receta 002</div>
+          </a>
+          <a href="#">
+            <div>Receta 003</div>
+          </a>
+          <a href="#">
+            <div>Receta 004</div>
+          </a>
+          <a href="#">
+            <div>Receta 005</div>
+          </a>
+          <a href="#">
+            <div>Receta 006</div>
+          </a>
+          <a href="#">
+            <div>Receta 007</div>
+          </a>
+          <a href="#">
+            <div>Receta 008</div>
+          </a>
+          <a href="#">
+            <div>Receta 009</div>
+          </a>
+          <a href="#">
+            <div>Receta 010</div>
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+    <%- include("partials/footer") %>

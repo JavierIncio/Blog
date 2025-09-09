@@ -1,0 +1,66 @@
+<%- include("partials/header") %> <%- include("partials/sidebar.ejs") %>
+
+    <main>
+
+      <section style="width: 800px;">
+        <div class="cabecera">
+          <div class="image upload">
+            <input class="file-uploader" type="file" onchange="upload()" accept="image/*">
+          </div>
+          <div class="ingredientes">
+            <div>
+              <ul>
+                <h2>Ingredientes</h2>
+                <li>
+                  <input type="checkbox" id="ingrediente-0" />
+                  <label for="ingrediente-0"> Lorem ipsum dolor sit </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-1" />
+                  <label for="ingrediente-1"> Lorem ipsum dolor sit </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-2" />
+                  <label for="ingrediente-2"> Lorem ipsum dolor sit </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-3" />
+                  <label for="ingrediente-3"> Lorem ipsum dolor sit </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ingrediente-4" />
+                  <label for="ingrediente-4"> Lorem ipsum dolor sit </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cuerpo">
+          <h1><%= tituloReceta %></h1>
+          <div class="text">
+            <ol>
+              <li>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt inventore sed accusantium debitis nihil vero numquam quidem nesciunt voluptatum, in, rem iste. Accusamus sapiente error eos quam officiis atque nisi.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, aliquam sint explicabo itaque tempora ipsa architecto. Unde similique odit quo dolorum doloremque, ratione ea totam, adipisci at, rem quibusdam modi.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum expedita cumque ullam architecto iure magnam similique repudiandae, asperiores mollitia sint eum alias repellendus modi ipsam assumenda quisquam maiores fuga dolor.
+                </p>
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+<%- include("partials/footer") %>
