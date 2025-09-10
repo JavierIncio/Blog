@@ -6,7 +6,8 @@ body {
   color: saddlebrown;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Lobster", sans-serif;
   font-size: 2.5rem;
   text-align: center;
@@ -32,13 +33,13 @@ main > section {
 
 .image,
 .ingredientes,
-.cuerpo {
+.main-body {
   border-radius: 50px;
   border: solid 3px burlywood;
   width: 300px;
 }
 
-.cabecera {
+.main-header {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -61,41 +62,40 @@ main > section {
 .ingredientes {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: fit-content;
+  justify-content: flex-start;
   padding: 1rem;
 }
 
 .ingredientes > div {
-  height: 46.5vh;;
+  height: 46.5vh;
   max-height: 46.5vh;
   overflow-y: auto;
 }
 
-.ingredientes  ul {
+.ingredientes ul {
   list-style: none;
-  padding-left: 0;  
-} 
+  padding-left: 0;
+}
 
 .ingredientes li {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
-} 
+  width: 90%;
+}
 
 .ingredientes label {
   width: 90%;
   word-wrap: break-word;
-} 
+}
 
-.cuerpo {
+.main-body {
   display: flex;
   flex-direction: column;
   width: 60%;
   padding: 1rem;
   height: 100%;
-  
 }
 
 .text {
@@ -107,7 +107,6 @@ main > section {
   width: 90%;
   word-wrap: break-word;
 }
-
 
 .recipe-list {
   display: flex;
@@ -144,20 +143,26 @@ a {
 
 .recipe-list::-webkit-scrollbar,
 .ingredientes > div::-webkit-scrollbar,
-.text::-webkit-scrollbar {
-  width: 10px;
+.text::-webkit-scrollbar,
+.publish input[type="text"]::-webkit-scrollbar,
+.publish textarea::-webkit-scrollbar {
+  width: 6px;
 }
 
 .recipe-list::-webkit-scrollbar-track,
 .ingredientes > div::-webkit-scrollbar-track,
-.text::-webkit-scrollbar-track {
+.text::-webkit-scrollbar-track,
+.publish input[type="text"]::-webkit-scrollbar-track,
+.publish textarea::-webkit-scrollbar-track {
   border: solid 3px burlywood;
   border-radius: 10px;
 }
 
 .recipe-list::-webkit-scrollbar-thumb,
 .ingredientes > div::-webkit-scrollbar-thumb,
-.text::-webkit-scrollbar-thumb {
+.text::-webkit-scrollbar-thumb,
+.publish input[type="text"]::-webkit-scrollbar-thumb,
+.publish textarea::-webkit-scrollbar-thumb {
   background-color: saddlebrown;
   border-radius: 10px;
 }
@@ -188,25 +193,26 @@ header {
   padding: 10px;
   border: solid 2px burlywood;
   border-radius: 10px;
-
 }
 
 .search-bar:focus {
-  border: solid 2px burlywood;
+  border: solid 2px saddlebrown;
   outline: none;
 }
 
 .search-btn {
-  flex: 0 0 auto; /* mantiene tamaño fijo */
-  border: solid 2px burlywood;
+  flex: 0 0 auto;
+  border: solid 2px saddlebrown;
   border-radius: 10px;
-  background: bisque;
+  background: burlywood;
   padding: 10px 14px;
+  color: saddlebrown;
 }
 
 .search-btn:hover {
-  border: solid 2px bisque;
-  background: burlywood;
+  border-color: burlywood;
+  background: saddlebrown;
+  color: burlywood;
 }
 
 /* ====================================================== FOOTER ====================================================== */
