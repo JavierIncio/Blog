@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+<%- include("partials/sidebar.ejs") %>
+
+<main>
+  <section style="width: 900px; display: flex; gap: 2rem;">
+    <form action="/receta/<%= id %>?_method=PATCH" method="POST" class="publish" style="display: flex; gap: 2rem; width: 100%;">
+      <div class="publish-header">
+        <div class="image upload">
+          <!-- <input type="text" name="imagen" value="<%= receta.imagen %>" /> -->
+        </div>
+        <div class="ingredientes">
+          <label>Ingredientes</label>
+          <label style="font-size: 1.5rem; margin-bottom: 10px;">(separados por comas)</label>
+          <textarea name="ingredientes" rows="15" cols="25" required><%= receta.ingredientes.join(", ") %></textarea>
+        </div>
+      </div>
+
+      <div class="publish-body">
+        <label>Título:</label>
+        <input type="text" name="tituloReceta" size="29" maxlength="36" value="<%= receta.titulo %>" required>
+
+        <label>Receta:</label>
+        <textarea name="receta" rows="20" cols="35" required><%= receta.receta %></textarea>
+
+        <button type="submit">Guardar</button>
+      </div>
+
+    </form>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
